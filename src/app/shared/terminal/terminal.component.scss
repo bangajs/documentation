@@ -1,0 +1,46 @@
+.terminal {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 6px;
+  padding-top: 45px;
+  margin: 1rem 0;
+  overflow: hidden;
+  background-color: #181000;
+}
+
+.terminal::before {
+  content: "\2022 \2022 \2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #625a4f;
+  color: #bcb8b3;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 0;
+  text-indent: 8px;
+}
+
+.terminal pre {
+  font-family: var(--font-2);
+  color: #d2d0cd;
+  padding: 0 1rem 1rem;
+}
+
+.terminal .copy {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 0.5rem;
+  color: #bcb8b3;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  svg {
+    margin-left: 0.25rem;
+  }
+}
