@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TerminalComponent } from './shared/terminal/terminal.component';
+import { GeneratorComponent } from './shared/generator/generator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TerminalComponent
+    TerminalComponent,
+    GeneratorComponent
   ],
   imports: [
     BrowserModule,
