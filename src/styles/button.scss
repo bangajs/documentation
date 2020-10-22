@@ -1,0 +1,20 @@
+.but {
+  border-radius: 0.25rem;
+  background: #114904;
+  color: #e9e7e6;
+  margin: 0 1rem 0 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.but svg {
+  fill: #bcb8b3;
+  margin-left: 0.5rem;
+}

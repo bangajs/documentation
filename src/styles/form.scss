@@ -1,0 +1,23 @@
+.form-control {
+  display: flex;
+  color: #181000;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #bcb8b3;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  input[type="radio"] {
+    background: red;
+  }
+
+  label {
+    margin-left: 1rem;
+  }
+
+  .desc {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}

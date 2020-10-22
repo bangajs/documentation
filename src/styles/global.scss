@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@1,400&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --font-1: "Poppins", sans-serif;
+  --font-2: "IBM Plex Mono", monospace;
+}
+
+:host {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #e9e7e6;
+  font-family: var(--font-1);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+code {
+  font-family: var(--font-2);
+  background: #d2d0cd;
+  padding: 4px 6px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+section {
+  margin-bottom: 5rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 960px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+}
