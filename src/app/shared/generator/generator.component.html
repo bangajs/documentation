@@ -18,64 +18,63 @@
 
           <app-terminal></app-terminal>
 
-          <div>
-               <div class="form-control">
-                    <input type="radio" name="command" value="new" id="new">
-                    <label for="new">
-                         <h5>New</h5>
-                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
-                              Voluptas
-                              quia eos dolor</p>
+          <div class="form-control">
+               <div>
+                    <label for="">
+                         <h5>Name</h5>
+                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </label>
+                    <input type="text" name="type" placeholder="E.g myApp, my-app">
                </div>
-
-               <div class="form-control">
-                    <input type="radio" name="command" value="new" id="generate">
-                    <label for="generate">
-                         <h5>Generate</h5>
-                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
-                              Voluptas
-                              quia eos dolor</p>
-                    </label>
-               </div>
-
-               <div class="form-control">
-                    <input type="checkbox" name="type" value="asset" id="asset">
-                    <label for="asset">
-                         <h5>Asset</h5>
-                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
-                              Voluptas
-                              quia eos dolor</p>
-                    </label>
-               </div>
-
-               <div class="form-control">
-                    <input type="checkbox" name="type" value="controller" id="controller">
-                    <label for="controller">
-                         <h5>Controller</h5>
-                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
-                              Voluptas
-                              quia eos dolor</p>
-                    </label>
-
-               </div>
-               <div class="form-control">
-                    <input type="text" name="type" value="controller" id="controller">
-                    <!-- <label for="controller">
-             <h5>Controller</h5>
-             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab. Voluptas
-               quia eos dolor</p>
-           </label> -->
-               </div>
-
           </div>
+
+          <div class="form-control">
+               <input type="radio" name="command" value="new" id="new">
+               <label for="new">
+                    <h5>New</h5>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
+                         Voluptas
+                         quia eos dolor</p>
+               </label>
+          </div>
+
+          <div class="form-control">
+               <input type="radio" name="command" value="new" id="generate">
+               <label for="generate">
+                    <h5>Generate</h5>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
+                         Voluptas
+                         quia eos dolor</p>
+               </label>
+          </div>
+
+          <div class="form-control">
+               <input type="checkbox" name="type" value="asset" id="asset">
+               <label for="asset">
+                    <h5>--no-asset</h5>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
+                         Voluptas
+                         quia eos dolor</p>
+               </label>
+          </div>
+
+          <div class="form-control">
+               <input type="checkbox" name="type" value="controller" id="controller">
+               <label for="controller">
+                    <h5>--no-controller</h5>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit illum ab.
+                         Voluptas
+                         quia eos dolor</p>
+               </label>
+          </div>
+
      </div>
 
 
      <div class="gen-footer">
           <button></button>
 
-          <button class="but but-small" (click)="selection = 'material'" tabindex="0">
+          <button class="but but-gen">
                <span>Generate command</span>
 
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">

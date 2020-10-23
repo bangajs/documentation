@@ -45,3 +45,53 @@
   padding: 0.75rem 0;
   background: #bcb8b3;
 }
+
+.form-control {
+  display: flex;
+  color: #181000;
+  padding: 0.4rem 0;
+  width: 100%;
+  border-bottom: 1px solid #bcb8b3;
+}
+
+.form-control:last-child {
+  border-bottom: none;
+}
+
+label {
+  margin-left: 1rem;
+
+  h5{
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.desc {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.but-gen {
+  position: relative;
+  z-index: 2;
+}
+
+.but-gen::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #114904;
+  border-radius: 0.5rem;
+  z-index: -1;
+  opacity: 0.3;
+  animation: but-glow 1.5s ease-in infinite;
+}
+
+@keyframes but-glow {
+  100% {
+    transform: scale(1.1, 1.6);
+    opacity: 0;
+  }
+}
