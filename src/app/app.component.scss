@@ -8,14 +8,14 @@
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));;
   grid-gap: 5rem;
   align-items: center;
   justify-content: space-between;
 }
 
 .hero-left {
-  max-width: 100%;
+  max-width: 600px;
 
   p {
     font-size: 0.875rem;
@@ -78,15 +78,21 @@ aside {
   width: 100%;
   max-width: 260px;
 
-  h4{
+  h4 {
     margin-bottom: 1rem;
   }
 
-  ul{
+  ul {
     list-style: none;
   }
 
-  a{
+  a {
     color: #625a4f;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  aside {
+    display: none;
   }
 }
