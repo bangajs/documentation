@@ -27,7 +27,12 @@
 .terminal pre {
   font-family: var(--font-2);
   color: #d2d0cd;
-  padding: 0 1rem 0.25rem;
+  padding: 0 1rem;
+  line-height: 1.7;
+
+  &::first-letter{
+    color: #f0a202;
+  }
 }
 
 .terminal .copy {

@@ -76,7 +76,7 @@ aside {
   position: sticky;
   top: 1rem;
   width: 100%;
-  max-width: 260px;
+  max-width: 200px;
 
   h4 {
     margin-bottom: 1rem;
@@ -84,6 +84,7 @@ aside {
 
   ul {
     list-style: none;
+    line-height: 2;
   }
 
   a {
