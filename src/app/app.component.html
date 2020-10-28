@@ -8,11 +8,12 @@
 
     <div class="hero-content">
       <div class="hero-left">
-        <h1>Build awesome <br> NodeJS apps with godspeed ⚡</h1>
+        <h1>Building Express applications made <em>easy!</em></h1>
 
         <br>
 
-        <p>Starting a new project is an underated process. Now you can now focus more on the core logic and leave the dirty work for BangaJS 😉.</p>
+        <p>Banga is a cli generator for building <a href="https://expressjs.com/">ExpressJS</a> applications with speed
+          and efficiency.</p>
 
         <div class="hero-links">
           <a href="https://github.com/saucecodee">
@@ -33,7 +34,7 @@
 
             <span>NPM</span>
           </a> |
-          <a href="https://ifedili.com">
+          <a href="https://twitter.com/saucecodee">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
               <path fill="none" d="M0 0h24v24H0z" />
               <path
@@ -45,7 +46,7 @@
         </div>
       </div>
 
-      <app-generator></app-generator> 
+      <app-generator></app-generator>
 
     </div>
 
@@ -55,6 +56,7 @@
 
 <div class="main-content container">
   <main>
+    <p>The main goal behind Banga is to aid faster developemnt buy generating "regular cde"</p>
     <!-- Installation -->
     <section id="installation">
       <h2 class="sect-title">Installation</h2>
@@ -66,14 +68,35 @@
       </div>
     </section>
 
+    <!-- Usage -->
     <section id="usage">
       <h2 class="sect-title">Usage</h2>
       <div>
-        <p>After installation you can invoke the tool on the command line via the <code>banga</code> command.
+        <p>
+          After <a href="#installation">installation</a> you can invoke the tool on the command line via the <code>banga</code> command. To confirm
+          successful installation run the command below to check current verion.
         </p>
-
         <app-terminal>
-          $ banga
+          $ banga version <br><br>
+          BangaJS v0.0.0
+        </app-terminal>
+
+        <p>
+          Now let's create a new Express app named <b>hello-app</b>. It would be created in a new folder called
+          <b>hello-app</b> in the current working directory.
+        </p>
+        <app-terminal>
+          $ banga new hello-app <br>
+          ...
+        </app-terminal>
+
+        <p>
+          Then navigate into the newly created project and start up the server. By default the server should be running
+          on <code>http://localhost:2020/</code>
+        </p>
+        <app-terminal>
+          $ cd hello-app <br>
+          $ npm start
         </app-terminal>
       </div>
     </section>
@@ -91,6 +114,7 @@
       </div>
     </section>
 
+    <!-- Commands  -->
     <section id="commands">
       <h2 class="sect-title">Commands</h2>
       <div>
@@ -102,6 +126,7 @@
       </div>
     </section>
   </main>
+
 
   <aside>
     <h4>Contents</h4>
