@@ -26,6 +26,11 @@ html {
 
 a {
   text-decoration: none;
+  color: #625a4f;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 p {
@@ -36,8 +41,9 @@ p {
 
 code {
   font-family: var(--font-2);
+  font-size: 0.9rem;
   background: #d2d0cd;
-  padding: 4px 6px;
+  padding: 2px 4px;
   border-radius: 4px;
   white-space: pre-wrap;
 }
