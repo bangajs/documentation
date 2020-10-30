@@ -29,7 +29,7 @@ a {
   color: #625a4f;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
@@ -49,13 +49,39 @@ code {
 }
 
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .sect-title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 2rem;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+th{
+  background: #d2d0cd;
+  padding: 0.5rem 0.75rem;
+}
+
+td {
+  border: 1px solid #d2d0cd;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+thead{
+  color: #352b1c;
+}
+
+
 
 .container {
   display: flex;
