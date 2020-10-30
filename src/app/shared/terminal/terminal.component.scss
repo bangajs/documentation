@@ -30,12 +30,12 @@
   padding: 0 1rem;
   line-height: 1.7;
 
-  &::first-letter{
+  &::first-letter {
     color: #f0a202;
   }
 }
 
-.terminal .copy {
+.copy {
   display: flex;
   align-items: center;
   position: absolute;
@@ -47,5 +47,10 @@
 
   svg {
     margin-left: 0.25rem;
+    fill: #bcb8b3;
+  }
+
+  svg:hover {
+    fill: #d2d0cd;
   }
 }
