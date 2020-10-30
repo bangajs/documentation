@@ -3,10 +3,8 @@
 <div class="hero">
   <div class="container">
     <header>
-      <img src="./../assets/BangaJS.png" alt="" height="70">
+      <img src="./../assets/BangaJS.png" alt="" height="56">
     </header>
-
-    <br><br><br><br>
 
     <div class="hero-content">
       <div class="hero-left">
@@ -15,7 +13,8 @@
         <br>
 
         <p>Banga is a cli generator for building <a href="https://expressjs.com/">ExpressJS</a> applications with speed
-          and efficiency.</p>
+          and efficiency.
+        </p>
 
         <div class="hero-links">
           <a href="https://github.com/saucecodee">
@@ -59,8 +58,8 @@
 <div class="main-content container">
   <main>
     <!-- Installation -->
-    <section id="installation">
-      <h2 class="sect-title">Installation</h2>
+    <section id="get-started">
+      <h2 class="sect-title">Get started</h2>
       <div>
         <p>Banga can be installed globally via npm.</p>
         <app-terminal>
@@ -72,10 +71,14 @@
     <!-- Usage -->
     <section id="usage">
       <h2 class="sect-title">Usage</h2>
+
       <div>
         <p> After <a href="#installation">installation</a> you can invoke the tool on the command line via the
           <code>banga</code> command.
         </p>
+
+        <br>
+
         <p>
           To confirm successful installation run the command below to check your installed version verion.
         </p>
@@ -108,11 +111,10 @@
     <section id="help">
       <h2 class="sect-title">Help</h2>
       <div>
-        <p>Get help tips for commands.</p>
+        <p>You can get help tips for commands usage.</p>
         <app-terminal>
           $ banga --help <br>
           $ banga &lt;command&gt; --help <br>
-          $ banga &lt;command&gt; &lt;subcommand&gt; --help
         </app-terminal>
       </div>
     </section>
@@ -121,11 +123,121 @@
     <section id="commands">
       <h2 class="sect-title">Commands</h2>
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam corrupti iusto recusandae ut
-          voluptatibus
-          quod nulla nisi officia enim fugiat deserunt, deleniti, consequatur perspiciatis tempora saepe sunt ipsa
-          neque.
+        <p>
+          Here's a list of available commands
         </p>
+
+        <table>
+          <thead>
+            <th>command</th>
+            <th>Alias</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>docs</td>
+              <td>d</td>
+              <td>Opens Banga docmentation in a browser</td>
+            </tr>
+            <tr>
+              <td>generate</td>
+              <td>g</td>
+              <td>Generates and/or modifies files.</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>h</td>
+              <td>Lists available commands and their short descriptions.</td>
+            </tr>
+            <tr>
+              <td>new</td>
+              <td>n</td>
+              <td>Creates a new workspace and an initial Express app.</td>
+            </tr>
+            <tr>
+              <td>version</td>
+              <td>v</td>
+              <td>Displays Banga version. </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>generate</h3>
+        <p>Generates and/or modifies files</p>
+
+        <app-terminal [isCopiable]=false>
+          $ banga generate &lt;type&gt; &lt;name&gt; [options] <br>
+          $ banga g &lt;type&gt; &lt;name&gt; [options] <br> <br>
+
+          Example: <br>
+
+          $ banaga generate controller user --no-crud <br>
+          $ banaga g asset user <br>
+          $ banaga generate service user <br>
+          $ banaga g r user <br>
+          $ banaga generate m user
+        </app-terminal>
+
+        <p>Here are the types</p>
+
+        <table>
+          <thead>
+            <th>Type</th>
+            <th>Alias</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>asset</td>
+              <td>a</td>
+              <td>Opens Banga docmentation in a browser</td>
+            </tr>
+            <tr>
+              <td>controller</td>
+              <td>c</td>
+              <td>Generates and/or modifies files.</td>
+            </tr>
+            <tr>
+              <td>model</td>
+              <td>m</td>
+              <td>Lists available commands and their short descriptions.</td>
+            </tr>
+            <tr>
+              <td>route</td>
+              <td>r</td>
+              <td>Creates a new workspace and an initial Express app.</td>
+            </tr>
+            <tr>
+              <td>service</td>
+              <td>s</td>
+              <td>Displays Banga version. </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Here are the options</p>
+
+        <table>
+          <thead>
+            <th>Options</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>--no-crud</td>
+              <td>Opens Banga docmentation in a browser</td>
+            </tr>
+            <tr>
+              <td>--force</td>
+              <td>Generates and/or modifies files.</td>
+            </tr>
+            <tr>
+              <td>--root</td>
+              <td>Lists available commands and their short descriptions.</td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
     </section>
   </main>
@@ -134,7 +246,7 @@
   <aside>
     <h4>Contents</h4>
     <ul>
-      <li><a href="#installation">Installation</a></li>
+      <li><a href="#get-started">Installation</a></li>
       <li><a href="#usage">Usage</a></li>
       <li><a href="#help">Help</a></li>
       <li><a href="#commands">Commands</a></li>
