@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #625a4f;
 }
 
@@ -54,11 +54,11 @@
   font-weight: 600;
   text-decoration: none;
   border-radius: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
   padding: 0.35rem 0.75rem;
 
   &:last-child {
-    margin-left: 1rem;
+    margin-left: 0.75rem;
   }
 
   svg {
