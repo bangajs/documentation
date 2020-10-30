@@ -162,6 +162,14 @@
           </tbody>
         </table>
 
+        <h3>docs</h3>
+        <p>Opens Banga docmentation in a browser</p>
+
+        <app-terminal [isCopiable]=false>
+          $ banga docs <br>
+          $ banga d
+        </app-terminal>
+
         <h3>generate</h3>
         <p>Generates and/or modifies files</p>
 
@@ -238,6 +246,61 @@
           </tbody>
         </table>
 
+        <h3>help</h3>
+        <p>Lists available commands and their short descriptions.</p>
+
+        <app-terminal [isCopiable]=false>
+          $ banga help <br>
+          $ banga h
+        </app-terminal>
+
+
+        <h3>new</h3>
+        <p>Creates a new workspace and an initial Express app.</p>
+
+        <app-terminal [isCopiable]=false>
+          $ banga new &lt;name&gt; [options] <br>
+          $ banga n &lt;name&gt; [options] <br> <br>
+
+          Example: <br>
+
+          $ banaga new hello-app --no-auth <br>
+          $ banaga new myap <br>
+          $ banaga n <br>
+        </app-terminal>
+
+        <p>Here are the options</p>
+
+        <table>
+          <thead>
+            <th>Options</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>--no-crud</td>
+              <td>Opens Banga docmentation in a browser</td>
+            </tr>
+            <tr>
+              <td>--force</td>
+              <td>Generates and/or modifies files.</td>
+            </tr>
+            <tr>
+              <td>--root</td>
+              <td>Lists available commands and their short descriptions.</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h3>version</h3>
+        <p>Displays Banga version..</p>
+
+        <app-terminal [isCopiable]=false>
+          $ banga version <br>
+          $ banga v
+        </app-terminal>
+
       </div>
     </section>
   </main>
@@ -249,7 +312,15 @@
       <li><a href="#get-started">Installation</a></li>
       <li><a href="#usage">Usage</a></li>
       <li><a href="#help">Help</a></li>
-      <li><a href="#commands">Commands</a></li>
+      <li><a href="#commands">Commands</a>
+        <ul class="nest-list-1">
+          <li><a href="#banga-docs">docs</a>
+          <li><a href="#banga-generate">generate</a>
+          <li><a href="#banga-help">help</a>
+          <li><a href="#banga-new">new</a>
+          <li><a href="#banga-version">version</a>
+        </ul>
+      </li>
     </ul>
   </aside>
 </div>
