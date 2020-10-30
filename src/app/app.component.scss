@@ -27,12 +27,12 @@
     width: 100%;
   }
 
-  p{
+  p {
     font-size: 1.125rem;
     line-height: 1.7;
   }
 
-  a{
+  a {
     color: #e9e7e6;
     text-decoration: underline;
   }
@@ -79,6 +79,10 @@ main {
   max-width: 600px;
 }
 
+.sub-section {
+  padding-top: 1rem;
+}
+
 aside {
   position: sticky;
   top: 1rem;
@@ -94,7 +98,7 @@ aside {
     line-height: 1.5;
   }
 
-  .nest-list-1{
+  .nest-list-1 {
     margin-left: 0.5rem;
   }
 
