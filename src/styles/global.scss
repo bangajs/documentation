@@ -52,6 +52,14 @@ section {
   margin-bottom: 4rem;
 }
 
+h3 {
+  color: #352b1c;
+}
+
+h4 {
+  color: #625a4f;
+}
+
 .sect-title {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -65,9 +73,10 @@ table {
   text-align: left;
 }
 
-th{
+th {
   background: #d2d0cd;
   padding: 0.5rem 0.75rem;
+  font-weight: 500;
 }
 
 td {
@@ -77,11 +86,9 @@ td {
   padding: 0.5rem 0.75rem;
 }
 
-thead{
+thead {
   color: #352b1c;
 }
-
-
 
 .container {
   display: flex;
@@ -90,6 +97,10 @@ thead{
   max-width: 960px;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.active {
+  color: red;
 }
 
 /* Responsive Styles */
