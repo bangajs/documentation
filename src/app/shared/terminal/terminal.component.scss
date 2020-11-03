@@ -3,9 +3,10 @@
   width: 100%;
   max-width: 600px;
   border-radius: 6px;
-  padding-top: 45px;
+  padding-top: 27px;
   margin: 1rem 0 2rem;
-  overflow: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
   background-color: #181000;
 }
 
@@ -24,16 +25,13 @@
   text-indent: 8px;
 }
 
-.terminal pre {
+.terminal .body {
   font-family: var(--font-2);
   color: #d2d0cd;
-  padding: 0 1rem;
+  padding: 1rem 1rem 1.5rem;
   line-height: 1.7;
-  overflow-x: auto;
-
-  &::first-letter {
-    color: #f0a202;
-  }
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .copy {

@@ -5,16 +5,12 @@
   --font-2: "IBM Plex Mono", monospace;
 }
 
-:host {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   border: 0;
   padding: 0;
   margin: 0;
   outline: 0;
+  outline: 2px solid red;
   box-sizing: border-box;
 }
 
@@ -101,6 +97,19 @@ thead {
 
 .active {
   color: red;
+}
+
+.cli-line{
+  display: block;
+}
+
+.cli-line::first-letter {
+  color: #f0a202;
+}
+
+.cli-comment {
+  margin-top: 1rem;
+  opacity: 0.6;
 }
 
 /* Responsive Styles */
