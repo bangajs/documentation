@@ -63,7 +63,7 @@
       <div>
         <p>Banga can be installed globally via npm.</p>
         <app-terminal>
-          $ npm install bangajs -g
+          <span class="cli-line">$ npm install bangajs -g</span>
         </app-terminal>
       </div>
     </section>
@@ -83,8 +83,9 @@
           To confirm successful installation run the command below to check your installed version.
         </p>
         <app-terminal>
-          $ banga version <br><br>
-          BangaJS v0.0.0
+          <span class="cli-line">$ banga version</span>
+
+          <div class="cli-comment"> BangaJS v0.0.0 </div>
         </app-terminal>
 
         <p>
@@ -92,8 +93,11 @@
           <b>hello-app</b> in the current working directory.
         </p>
         <app-terminal>
-          $ banga new hello-app <br>
-          ...
+          <span class="cli-line">$ banga new hello-app</span>
+
+          <div class="cli-comment">
+            ...
+          </div>
         </app-terminal>
 
         <p>
@@ -101,8 +105,8 @@
           on <code>http://localhost:2020/</code>
         </p>
         <app-terminal>
-          $ cd hello-app <br>
-          $ npm start
+          <span class="cli-line">$ cd hello-app</span>
+          <span class="cli-line">$ npm start</span>
         </app-terminal>
       </div>
     </section>
@@ -113,8 +117,8 @@
       <div>
         <p>You can get help tips for <a href="#commands">commands</a> usage.</p>
         <app-terminal>
-          $ banga --help <br>
-          $ banga &lt;command&gt; --help <br>
+          <span class="cli-line">$ banga --help</span>
+          <span class="cli-line">$ banga &lt;command&gt; --help</span>
         </app-terminal>
       </div>
     </section>
@@ -170,8 +174,8 @@
           <p>Opens Banga docmentation in a browser</p>
 
           <app-terminal [isCopiable]=false>
-            $ banga docs <br>
-            $ banga d
+            <span class="cli-line">$ banga docs</span>
+            <span class="cli-line">$ banga d </span>
           </app-terminal>
         </div>
 
@@ -181,16 +185,18 @@
           <p>Generates and/or modifies files</p>
 
           <app-terminal [isCopiable]=false>
-            $ banga generate &lt;type&gt; &lt;name&gt; [options] <br>
-            $ banga g &lt;type&gt; &lt;name&gt; [options] <br> <br>
+            <span class="cli-line">$ banga generate &lt;type&gt; &lt;name&gt; [options]</span>
+            <span class="cli-line">$ banga g &lt;type&gt; &lt;name&gt; [options]</span>
 
-            Example: <br>
+            <div class="cli-comment">
+              Example: <br>
 
-            $ banga generate controller user --no-crud <br>
-            $ banga g asset user <br>
-            $ banga generate service user <br>
-            $ banga g r user <br>
-            $ banga generate m user
+              <span class="cli-line">$ banga generate controller user --no-crud </span>
+              <span class="cli-line">$ banga g asset user </span>
+              <span class="cli-line">$ banga generate service user </span>
+              <span class="cli-line">$ banga g r user </span>
+              <span class="cli-line">$ banga generate m user </span>
+            </div>
           </app-terminal>
 
           <h4>Types</h4>
@@ -290,7 +296,8 @@
 
           <div class="notice">
             <h4>Note:</h4>
-            <span>- The following options <b>--no-controller</b>, <b>--no-model</b>, <b>--no-route</b> and <b>--no-service</b> are only avilable for <b>asset</b> type</span>
+            <span>- The following options <b>--no-controller</b>, <b>--no-model</b>, <b>--no-route</b> and
+              <b>--no-service</b> are only avilable for <b>asset</b> type</span>
           </div>
         </div>
 
@@ -300,8 +307,8 @@
           <p>Lists available commands and their short descriptions.</p>
 
           <app-terminal [isCopiable]=false>
-            $ banga help <br>
-            $ banga h
+            <span class="cli-line">$ banga help <br> </span>
+            <span class="cli-line">$ banga h </span>
           </app-terminal>
         </div>
 
@@ -311,13 +318,14 @@
           <p>Creates a new Express app.</p>
 
           <app-terminal [isCopiable]=false>
-            $ banga new &lt;name&gt; [options] <br>
-            $ banga n &lt;name&gt; [options] <br> <br>
+            <span class="cli-line">$ banga new &lt;name&gt; [options]</span>
+            <span class="cli-line">$ banga n &lt;name&gt; [options]</span>
 
-            Example: <br>
-
-            $ banga new hello-app --no-auth <br>
-            $ banga new myapp <br>
+            <div class="cli-comment">
+              Example:
+              <span class="cli-line">$ banga new hello-app --no-auth</span>
+              <span class="cli-line">$ banga new myapp</span>
+            </div>
           </app-terminal>
 
           <h4>Options</h4>
@@ -345,8 +353,9 @@
           <p>Displays Banga version.</p>
 
           <app-terminal [isCopiable]=false>
-            $ banga version <br>
-            $ banga v
+            <span class="cli-line">$ banga version</span>
+            <span class="cli-line">$ banga v</span>
+
           </app-terminal>
         </div>
 
