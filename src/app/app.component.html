@@ -186,11 +186,11 @@
 
             Example: <br>
 
-            $ banaga generate controller user --no-crud <br>
-            $ banaga g asset user <br>
-            $ banaga generate service user <br>
-            $ banaga g r user <br>
-            $ banaga generate m user
+            $ banga generate controller user --no-crud <br>
+            $ banga g asset user <br>
+            $ banga generate service user <br>
+            $ banga g r user <br>
+            $ banga generate m user
           </app-terminal>
 
           <h4>Types</h4>
@@ -288,7 +288,10 @@
             </tbody>
           </table>
 
-          <p class="notice">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique accusamus, nulla dignissimos quibusdam maiores autem nam amet at iste sed?</p>
+          <div class="notice">
+            <h4>Note:</h4>
+            <span>- The following options <b>--no-controller</b>, <b>--no-model</b>, <b>--no-route</b> and <b>--no-service</b> are only avilable for <b>asset</b> type</span>
+          </div>
         </div>
 
         <!-- help  -->
@@ -305,7 +308,7 @@
         <!-- new  -->
         <div class="sub-section" id="banga-new">
           <h3>new</h3>
-          <p>Creates a new workspace and initialize an Express app.</p>
+          <p>Creates a new Express app.</p>
 
           <app-terminal [isCopiable]=false>
             $ banga new &lt;name&gt; [options] <br>
@@ -313,9 +316,8 @@
 
             Example: <br>
 
-            $ banaga new hello-app --no-auth <br>
-            $ banaga new myap <br>
-            $ banaga n <br>
+            $ banga new hello-app --no-auth <br>
+            $ banga new myapp <br>
           </app-terminal>
 
           <h4>Options</h4>
@@ -340,7 +342,7 @@
         <!-- version -->
         <div class="sub-section" id="banga-version">
           <h3>version</h3>
-          <p>Displays Banga version..</p>
+          <p>Displays Banga version.</p>
 
           <app-terminal [isCopiable]=false>
             $ banga version <br>

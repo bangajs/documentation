@@ -74,13 +74,41 @@
   justify-content: space-between;
 }
 
+.notice {
+  background: #fbe3b3;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+
+  h4 {
+    color: #483101;
+    margin-bottom: 0.5rem;
+  }
+
+  b {
+    color: #906101;
+  }
+}
+
 main {
   width: 100%;
   max-width: 600px;
 }
 
 .sub-section {
-  padding-top: 1rem;
+  padding: 1rem 0;
+}
+
+.sub-section > h3 {
+  margin-bottom: 1rem;
+}
+
+.sub-section > h3::before {
+  content: "$ banga";
+  color: #bcb8b3;
+  font-family: var(--font-2);
+  margin-right: 0.5rem;
 }
 
 aside {
