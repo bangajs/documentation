@@ -62,7 +62,7 @@
       <h2 class="sect-title">Get started</h2>
       <div>
         <p>Banga can be installed globally via npm.</p>
-        <app-terminal>
+        <app-terminal text="npm install bangajs -g">
           <span class="cli-line">$ npm install bangajs -g</span>
         </app-terminal>
       </div>
@@ -82,7 +82,7 @@
         <p>
           To confirm successful installation run the command below to check your installed version.
         </p>
-        <app-terminal>
+        <app-terminal text="banga version">
           <span class="cli-line">$ banga version</span>
 
           <div class="cli-comment"> BangaJS v0.0.0 </div>
@@ -92,7 +92,7 @@
           Now let's create a new Express app named <b>hello-app</b>. It would be created in a new folder called
           <b>hello-app</b> in the current working directory.
         </p>
-        <app-terminal>
+        <app-terminal text="banga new hello-app">
           <span class="cli-line">$ banga new hello-app</span>
 
           <div class="cli-comment">
@@ -104,7 +104,7 @@
           Then navigate into the newly created project and start up the server. By default the server should be running
           on <code>http://localhost:2020/</code>
         </p>
-        <app-terminal>
+        <app-terminal [isCopiable]=false>
           <span class="cli-line">$ cd hello-app</span>
           <span class="cli-line">$ npm start</span>
         </app-terminal>
@@ -116,8 +116,8 @@
       <h2 class="sect-title">Help</h2>
       <div>
         <p>You can get help tips for <a href="#commands">commands</a> usage.</p>
-        <app-terminal>
-          <span class="cli-line">$ banga --help</span>
+        <app-terminal text="banga help">
+          <span class="cli-line">$ banga help</span>
           <span class="cli-line">$ banga &lt;command&gt; --help</span>
         </app-terminal>
       </div>
@@ -173,7 +173,7 @@
           <h3>docs</h3>
           <p>Opens Banga docmentation in a browser</p>
 
-          <app-terminal [isCopiable]=false>
+          <app-terminal text="banga docs">
             <span class="cli-line">$ banga docs</span>
             <span class="cli-line">$ banga d </span>
           </app-terminal>
@@ -184,7 +184,7 @@
           <h3>generate</h3>
           <p>Generates and/or modifies files</p>
 
-          <app-terminal [isCopiable]=false>
+          <app-terminal text="banga generate &lt;type&gt; &lt;name&gt;">
             <span class="cli-line">$ banga generate &lt;type&gt; &lt;name&gt; [options]</span>
             <span class="cli-line">$ banga g &lt;type&gt; &lt;name&gt; [options]</span>
 
@@ -306,7 +306,7 @@
           <h3>help</h3>
           <p>Lists available commands and their short descriptions.</p>
 
-          <app-terminal [isCopiable]=false>
+          <app-terminal text="banga help">
             <span class="cli-line">$ banga help <br> </span>
             <span class="cli-line">$ banga h </span>
           </app-terminal>
@@ -317,7 +317,7 @@
           <h3>new</h3>
           <p>Creates a new Express app.</p>
 
-          <app-terminal [isCopiable]=false>
+          <app-terminal text="banga new &lt;name&gt;">
             <span class="cli-line">$ banga new &lt;name&gt; [options]</span>
             <span class="cli-line">$ banga n &lt;name&gt; [options]</span>
 
@@ -352,7 +352,7 @@
           <h3>version</h3>
           <p>Displays Banga version.</p>
 
-          <app-terminal [isCopiable]=false>
+          <app-terminal text="banga version">
             <span class="cli-line">$ banga version</span>
             <span class="cli-line">$ banga v</span>
 
