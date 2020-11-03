@@ -111,7 +111,7 @@
     <section id="help">
       <h2 class="sect-title">Help</h2>
       <div>
-        <p>You can get help tips for commands usage.</p>
+        <p>You can get help tips for <a href="#commands">commands</a> usage.</p>
         <app-terminal>
           $ banga --help <br>
           $ banga &lt;command&gt; --help <br>
@@ -238,19 +238,57 @@
             </thead>
             <tbody>
               <tr>
+                <td>--auth</td>
+                <td>Add auth middleware to routes</td>
+              </tr>
+              <tr>
+                <td>--no-controller</td>
+                <td>Do not create <code>controller</code> file</td>
+              </tr>
+              <tr>
+                <td>--no-create</td>
+                <td>Do not include <code>create</code> methods</td>
+              </tr>
+              <tr>
                 <td>--no-crud</td>
                 <td>Do not include CRUD methods</td>
+              </tr>
+              <tr>
+                <td>--no-delete</td>
+                <td>Do not include <code>delete</code> methods</td>
               </tr>
               <tr>
                 <td>--force</td>
                 <td>Replace file if it already exists</td>
               </tr>
               <tr>
+                <td>--no-model</td>
+                <td>Do not create <code>model</code> file</td>
+              </tr>
+              <tr>
+                <td>--no-read</td>
+                <td>Do not include <code>read</code> methods</td>
+              </tr>
+              <tr>
                 <td>--root</td>
-                <td>Create file at the root of the current working directory</td>
+                <td>Creates file at the root of the current working directory</td>
+              </tr>
+              <tr>
+                <td>--no-route</td>
+                <td>Do not create <code>route</code> file</td>
+              </tr>
+              <tr>
+                <td>--no-service</td>
+                <td>Do not create <code>service</code> file</td>
+              </tr>
+              <tr>
+                <td>--no-update</td>
+                <td>Do not include <code>update</code> methods</td>
               </tr>
             </tbody>
           </table>
+
+          <p class="notice">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique accusamus, nulla dignissimos quibusdam maiores autem nam amet at iste sed?</p>
         </div>
 
         <!-- help  -->
@@ -289,12 +327,12 @@
             </thead>
             <tbody>
               <tr>
-                <td>--no-auth</td>
-                <td>Do not include User and authentication files</td>
-              </tr>
-              <tr>
                 <td>--force</td>
                 <td>Replace file if it already exists</td>
+              </tr>
+              <tr>
+                <td>--no-auth</td>
+                <td>Do not include User and authentication files</td>
               </tr>
           </table>
         </div>
@@ -318,7 +356,7 @@
   <aside>
     <h4>Contents</h4>
     <ul>
-      <li><a href="#get-started">Installation</a></li>
+      <li><a href="#get-started">Get started</a></li>
       <li><a href="#usage">Usage</a></li>
       <li><a href="#help">Help</a></li>
       <li><a href="#commands">Commands</a>
