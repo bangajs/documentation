@@ -108,6 +108,58 @@
           <span class="cli-line">$ cd hello-app</span>
           <span class="cli-line">$ npm start</span>
         </app-terminal>
+
+        <p>file structure</p>
+
+        <pre>
+▷ ── public
+▷ ── src
+│   ▷ ── config
+│   │   │   ├── index.js
+│   │   │   └── mongo-db.config.js
+│   │   │
+│   │   ▷ ── env
+│   │       ├── dev.env.json
+│   │       └── prod.env.json
+│   │
+│   ▷ ── controllers
+│   │       ├── auth.controller.js
+│   │       └── user.controller.js
+│   │
+│   ▷ ── middlewares
+│   │       ├── auth.middleware.js
+│   │       ├── error.middleware.js
+│   │       ├── multer.middleware.js
+│   │       └── pre-route.middleware.js
+│   │
+│   ▷ ── models
+│   │       ├── token.model.js
+│   │       └── user.model.js
+│   │
+│   ▷ ── routes
+│   │       ├── auth.route.js
+│   │       ├── index.js
+│   │       └── user.route.js
+│   │
+│   ▷ ── services
+│   │       ├── auth.service.js
+│   │       ├── mail.service.js
+│   │       └── user.service.js
+│   │
+│   ▷ ── utils
+│   │        ├── custom-error.js
+│   │        ├── multer.js
+│   │        └── response.js
+│   ▷ ── validators
+│
+▷ ── uploads
+│
+├── .env
+├── .env.dev
+├── .gitignore
+├── package.json
+└── server.js
+        </pre>
       </div>
     </section>
 
@@ -296,8 +348,15 @@
 
           <div class="notice">
             <h4>Note:</h4>
-            <span>- The following options <b>--no-controller</b>, <b>--no-model</b>, <b>--no-route</b> and
-              <b>--no-service</b> are only avilable for <b>asset</b> type</span>
+            <ul>
+              <li>The following options <b>--no-controller</b>, <b>--no-model</b>, <b>--no-route</b> and
+                <b>--no-service</b> are only avilable for <b>asset</b> type
+              </li>
+              <li>
+                You can also specify a path to nest your feature within subdirectories. For example, a name of
+                "users/model" will generate the model file at src/users/model.
+              </li>
+            </ul>
           </div>
         </div>
 
