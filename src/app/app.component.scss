@@ -146,3 +146,13 @@ aside {
     display: none;
   }
 }
+
+.code-board{
+  background: #181000;
+  color: #e9e7e6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  overflow-x: auto;
+  font-family: var(--font-2);
+  font-size: 0.875rem;
+}
